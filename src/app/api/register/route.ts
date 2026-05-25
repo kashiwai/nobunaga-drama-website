@@ -6,9 +6,8 @@ function isValidEmail(email: string): boolean {
   return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.trim());
 }
 
-const resend = new Resend(process.env.RESEND_API_KEY);
-
 async function sendConfirmationEmail(email: string) {
+  const resend = new Resend(process.env.RESEND_API_KEY);
   await resend.emails.send({
     from: "NOBUNAGA <info@nobunaga-movie.com>",
     to: email,
