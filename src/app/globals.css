@@ -1,0 +1,117 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-primary: #0a0a0f;
+  --bg-secondary: #111118;
+  --crimson: #b91c1c;
+  --gold: #d4af37;
+  --text-primary: #f0ede8;
+  --text-muted: #8b8680;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scrollbar-width: thin;
+  scrollbar-color: #7f1d1d #111118;
+}
+
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: "Noto Serif JP", "游明朝", "Yu Mincho", Georgia, serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ─ スクロールバー ─ */
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: #111118; }
+::-webkit-scrollbar-thumb { background: #7f1d1d; border-radius: 0; }
+::-webkit-scrollbar-thumb:hover { background: #b91c1c; }
+
+/* ─ 日本語テキスト ─ */
+.text-ja {
+  font-feature-settings: "pkna" 1;
+  letter-spacing: 0.05em;
+}
+
+/* ─ 炎テキスト ─ */
+.flame-text {
+  background: linear-gradient(150deg, #fcd34d 0%, #ef4444 45%, #7f1d1d 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ─ 金テキスト ─ */
+.gold-text {
+  background: linear-gradient(135deg, #fcd34d 0%, #d4af37 50%, #b8860b 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ─ セクション区切り線 ─ */
+.divider-crimson {
+  border: none;
+  height: 1px;
+  background: linear-gradient(to right, transparent, rgba(185,28,28,0.6), transparent);
+  margin: 0 auto;
+}
+
+/* ─ キャラクターカード ─ */
+.character-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+.character-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 48px rgba(185, 28, 28, 0.25);
+}
+
+/* ─ スクロールバー非表示（横スクロール） ─ */
+.scrollbar-hide {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* ─ フォーカスリング ─ */
+*:focus-visible {
+  outline: 1px solid rgba(212, 175, 55, 0.5);
+  outline-offset: 2px;
+}
+
+/* ─ アニメーション ─ */
+@keyframes emberRise {
+  0%   { opacity: 0; transform: translateY(0) scale(1); }
+  40%  { opacity: 0.7; }
+  100% { opacity: 0; transform: translateY(-100px) scale(0.3); }
+}
+
+@keyframes flicker {
+  0%, 100% { opacity: 1; }
+  33%       { opacity: 0.8; }
+  66%       { opacity: 0.9; }
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(16px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.animate-flicker { animation: flicker 2s ease-in-out infinite; }
+.animate-fade-in-up { animation: fadeInUp 0.6s ease forwards; }
+
+/* ─ 選択テキスト ─ */
+::selection {
+  background: rgba(185, 28, 28, 0.4);
+  color: #fcd34d;
+}
