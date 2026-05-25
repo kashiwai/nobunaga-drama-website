@@ -68,10 +68,12 @@ export default function HomePage() {
             {/* タイトルロゴ画像 */}
             <h1 className="mb-8">
               <img
-                src="/keyvisuals/logo.png"
+                src="/keyvisuals/logo_v2.png"
                 alt="第六天魔王、蒼き狼へ / NOBUNAGA: The Shadow of Khan"
-                className="w-full max-w-[420px] md:max-w-[480px] mx-auto md:ml-auto md:mr-0 drop-shadow-2xl"
-                style={{ filter: "drop-shadow(0 4px 24px rgba(0,0,0,0.9)) drop-shadow(0 0 40px rgba(185,28,28,0.3))" }}
+                className="w-full max-w-[420px] md:max-w-[500px] mx-auto md:ml-auto md:mr-0"
+                style={{
+                  filter: "drop-shadow(0 0 30px rgba(185,28,28,0.5)) drop-shadow(0 0 60px rgba(212,175,55,0.25))",
+                }}
               />
             </h1>
 
