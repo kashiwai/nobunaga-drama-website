@@ -25,6 +25,16 @@ export default function CharactersPage() {
 
   return (
     <div className="min-h-screen pt-24 pb-24">
+      {/* キービジュアル */}
+      <div className="relative overflow-hidden mb-12" style={{aspectRatio:"21/9", maxHeight:"420px"}}>
+        <img src="/stills/s3.jpg" alt="信長とテムジンの対峙" className="w-full h-full object-cover" style={{objectPosition:"center 30%"}} />
+        <div className="absolute inset-0 bg-gradient-to-t from-ink-950 via-black/30 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-transparent to-black/60" />
+        <div className="absolute bottom-6 left-0 right-0 text-center">
+          <p className="text-gold-500 text-xs tracking-[0.5em]">CAST & CHARACTERS</p>
+        </div>
+      </div>
+
       <div className="max-w-6xl mx-auto px-4">
         {/* ヘッダー */}
         <div className="mb-12">
@@ -48,10 +58,13 @@ export default function CharactersPage() {
               <div className="flex flex-col md:flex-row gap-6">
                 {/* アバター */}
                 <div className="flex-shrink-0">
-                  <div className="w-24 h-24 md:w-32 md:h-32 bg-ink-700 border border-stone-700 flex items-center justify-center">
-                    <span className="text-5xl text-stone-500">{char.name_ja[0]}</span>
+                  <div className="w-24 h-24 md:w-32 md:h-32 bg-ink-700 border border-stone-700 overflow-hidden">
+                    <img
+                      src={`/characters/${char.id}/ref_001.png`}
+                      alt={char.name_ja}
+                      className="w-full h-full object-cover object-top"
+                    />
                   </div>
-                  <p className="text-stone-600 text-xs text-center mt-2">ref画像配置予定</p>
                 </div>
 
                 {/* 情報 */}

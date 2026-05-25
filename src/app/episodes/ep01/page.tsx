@@ -13,14 +13,20 @@ export default function Episode01Page() {
   const seconds  = totalSec % 60;
 
   return (
-    <div className="min-h-screen pt-24 pb-24">
-      <div className="max-w-5xl mx-auto px-4">
-        {/* ヘッダー */}
+    <div className="min-h-screen pb-24">
+      {/* ヒーロー画像 */}
+      <div className="relative overflow-hidden" style={{height:"60vh", minHeight:"360px"}}>
+        <img src="/stills/s1.jpg" alt="本能寺の炎" className="w-full h-full object-cover" style={{objectPosition:"center 20%"}} />
+        <div className="absolute inset-0 bg-gradient-to-t from-ink-950 via-black/20 to-black/50" />
+        <div className="absolute bottom-0 left-0 right-0 px-4 pb-8 max-w-5xl mx-auto">
+          <p className="text-crimson-400 text-xs tracking-[0.4em] mb-2">EPISODE 01</p>
+          <h1 className="text-3xl md:text-5xl font-bold text-white text-ja drop-shadow-lg">第1話</h1>
+        </div>
+      </div>
+
+      <div className="max-w-5xl mx-auto px-4 pt-10">
+        {/* サブタイトル */}
         <div className="mb-10">
-          <p className="text-crimson-500 text-xs tracking-[0.4em] mb-3">EPISODE 01</p>
-          <h1 className="text-3xl md:text-4xl font-bold text-ja mb-2">
-            <span className="gold-text">第1話</span>
-          </h1>
           <h2 className="text-2xl text-stone-200 text-ja tracking-wide mb-1">
             {ep.title_ja}
           </h2>
@@ -48,6 +54,13 @@ export default function Episode01Page() {
           <p className="text-stone-500 text-xs tracking-wider mb-3">SYNOPSIS</p>
           <p className="text-stone-200 text-ja leading-loose">{ep.synopsis_ja}</p>
           <p className="text-stone-500 text-sm mt-3 leading-relaxed">{ep.synopsis_en}</p>
+        </div>
+
+        {/* 劇中スチール */}
+        <div className="relative overflow-hidden mb-10" style={{aspectRatio:"16/9", maxHeight:"400px"}}>
+          <img src="/stills/s4.jpg" alt="邂逅のシーン" className="w-full h-full object-cover" style={{objectPosition:"center 40%"}} />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
+          <p className="absolute bottom-4 left-0 right-0 text-center text-stone-400 text-xs tracking-widest">— 草原の邂逅 —</p>
         </div>
 
         {/* ツール凡例 */}
@@ -120,3 +133,4 @@ export default function Episode01Page() {
     </div>
   );
 }
+

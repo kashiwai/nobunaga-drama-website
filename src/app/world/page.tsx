@@ -95,10 +95,11 @@ export default function WorldPage() {
   return (
     <div className="min-h-screen pt-14">
       {/* ── ヘッダー ─────────────────────────────────────────────────── */}
-      <section className="relative py-24 px-6 text-center overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-b from-black via-ink-900 to-black" />
+      <section className="relative py-32 px-6 text-center overflow-hidden min-h-[60vh] flex items-center">
+        <img src="/stills/s2.jpg" alt="モンゴル高原" className="absolute inset-0 w-full h-full object-cover object-center" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black" />
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_50%_0%,_rgba(185,28,28,0.12)_0%,_transparent_60%)]" />
-        <div className="relative z-10 max-w-3xl mx-auto">
+        <div className="relative z-10 max-w-3xl mx-auto w-full">
           <p className="text-gold-500 text-xs tracking-[0.5em] mb-6 uppercase">World & Timeline</p>
           <h1 className="text-4xl md:text-6xl font-bold text-ja mb-4">
             <span className="flame-text">世界観</span>
@@ -151,6 +152,13 @@ export default function WorldPage() {
               <p className="text-stone-500 text-xs text-ja">主要人物: テムジン・ボルテ・ジャムカ</p>
             </div>
           </div>
+        </div>
+
+        {/* 劇中カット */}
+        <div className="relative mb-12 overflow-hidden" style={{aspectRatio:"16/9", maxHeight:"480px"}}>
+          <img src="/stills/s4.jpg" alt="信長とテムジンの邂逅" className="w-full h-full object-cover object-center" />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent" />
+          <p className="absolute bottom-4 left-0 right-0 text-center text-stone-400 text-xs tracking-widest">— 草原の作戦会議 —</p>
         </div>
 
         {/* 問いかけ */}
