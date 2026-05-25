@@ -6,6 +6,7 @@ export const SITE_CONFIG = {
   title_en: "NOBUNAGA: The Shadow of Khan",
   description: "本能寺で炎に消えた織田信長が、謎の転移によってモンゴル高原へ。若きテムジンとの邂逅が始まる。AI実写ドラマシリーズ。",
   label: "AI 実写ドラマシリーズ",
+  site_url: "https://nobunaga-movie.com",
 };
 
 // 動画URL設定
