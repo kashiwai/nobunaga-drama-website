@@ -25,6 +25,7 @@ body {
   background-color: var(--bg-primary);
   color: var(--text-primary);
   font-family: "Noto Serif JP", "游明朝", "Yu Mincho", Georgia, serif;
+  font-weight: 500;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

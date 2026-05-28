@@ -85,10 +85,10 @@ export default function HomePage() {
             </div>
 
             {/* ヒーローコピー */}
-            <p className="text-stone-100 text-base sm:text-lg md:text-xl leading-loose text-ja font-bold mb-1 tracking-wide drop-shadow-lg">
+            <p className="text-stone-100 text-base sm:text-lg md:text-xl leading-relaxed text-ja font-bold mb-1 tracking-wide drop-shadow-lg">
               {HERO_CONTENT.copy_line1}
             </p>
-            <p className="text-stone-100 text-base sm:text-lg md:text-xl leading-loose text-ja font-bold mb-8 tracking-wide drop-shadow-lg">
+            <p className="text-stone-100 text-base sm:text-lg md:text-xl leading-relaxed text-ja font-bold mb-8 tracking-wide drop-shadow-lg">
               {HERO_CONTENT.copy_line2}
             </p>
 
@@ -131,7 +131,7 @@ export default function HomePage() {
       {/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
           Section 2: 事前登録バナー
       ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */}
-      <section id="register" className="relative py-16 md:py-20 px-5 overflow-hidden">
+      <section id="register" className="relative py-10 md:py-14 px-5 overflow-hidden">
         {/* 背景グロウ */}
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_80%_80%_at_50%_50%,_rgba(185,28,28,0.08)_0%,_transparent_70%)]" />
         <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-crimson-800/60 to-transparent" />
@@ -154,7 +154,7 @@ export default function HomePage() {
           <p className="text-crimson-400 text-sm md:text-base font-bold tracking-widest mb-2 text-ja">
             2025年6月末より順次配信開始
           </p>
-          <p className="text-stone-400 text-sm text-ja leading-loose mb-8 max-w-xl mx-auto">
+          <p className="text-stone-400 text-sm text-ja leading-relaxed mb-8 max-w-xl mx-auto">
             登録者限定で各話の視聴URLをメールでお届けします。<br className="hidden sm:block" />
             メールアドレスを登録するだけで、無料で全話視聴できます。
           </p>
@@ -183,7 +183,7 @@ export default function HomePage() {
       {/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
           Section 3: Trailer
       ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */}
-      <section id="trailer" className="py-20 md:py-28 px-5">
+      <section id="trailer" className="py-12 md:py-16 px-5">
         <div className="max-w-5xl mx-auto">
           {/* ラベル */}
           <p className="text-crimson-500 text-[11px] tracking-[0.5em] uppercase mb-3">
@@ -194,10 +194,10 @@ export default function HomePage() {
           </h2>
           <div className="h-px bg-gradient-to-r from-gold-600/60 to-transparent mb-8" />
 
-          <p className="text-stone-300 text-base md:text-lg text-ja leading-loose mb-2 font-bold">
+          <p className="text-stone-300 text-base md:text-lg text-ja leading-relaxed mb-2 font-bold">
             {TRAILER_CONTENT.text_line1}
           </p>
-          <p className="text-stone-400 text-sm md:text-base text-ja leading-loose mb-8">
+          <p className="text-stone-400 text-sm md:text-base text-ja leading-relaxed mb-8">
             {TRAILER_CONTENT.text_line2}
           </p>
 
@@ -214,7 +214,7 @@ export default function HomePage() {
       {/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
           Section 3: Story
       ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */}
-      <section id="story" className="py-20 md:py-28 px-5">
+      <section id="story" className="py-12 md:py-16 px-5">
         <div className="max-w-3xl mx-auto">
           <p className="text-crimson-500 text-[11px] tracking-[0.5em] uppercase mb-3">
             {STORY_CONTENT.label}
@@ -234,11 +234,11 @@ export default function HomePage() {
             <div className="absolute bottom-3 left-3 w-4 h-4 border-b border-l border-crimson-800/50" />
 
             {STORY_CONTENT.paragraphs.map((para, i) => (
-              <p key={i} className="text-stone-200 leading-loose text-ja text-base md:text-lg mb-5 last:mb-0">
+              <p key={i} className="text-stone-200 leading-relaxed text-ja text-base md:text-lg mb-5 last:mb-0">
                 {para}
               </p>
             ))}
-            <p className="text-gold-500 leading-loose text-ja text-base md:text-lg font-bold mt-6 pt-6 border-t border-crimson-900/30">
+            <p className="text-gold-500 leading-relaxed text-ja text-base md:text-lg font-bold mt-6 pt-6 border-t border-crimson-900/30">
               {STORY_CONTENT.epilogue}
             </p>
           </div>
@@ -255,7 +255,7 @@ export default function HomePage() {
       {/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
           Section 4: Episode 1
       ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */}
-      <section id="episode1" className="py-20 md:py-28 px-5">
+      <section id="episode1" className="py-12 md:py-16 px-5">
         <div className="max-w-5xl mx-auto">
           <p className="text-crimson-500 text-[11px] tracking-[0.5em] uppercase mb-1">
             {EPISODE1_CONTENT.label}
@@ -268,7 +268,7 @@ export default function HomePage() {
           </h2>
           <div className="h-px bg-gradient-to-r from-gold-600/60 to-transparent mb-8" />
 
-          <p className="text-stone-300 text-base md:text-lg text-ja leading-loose mb-10">
+          <p className="text-stone-300 text-base md:text-lg text-ja leading-relaxed mb-10">
             {EPISODE1_CONTENT.synopsis}
           </p>
 
@@ -310,7 +310,7 @@ export default function HomePage() {
       {/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
           Section 5: Characters
       ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */}
-      <section id="characters" className="py-20 md:py-28 px-5">
+      <section id="characters" className="py-12 md:py-16 px-5">
         <div className="max-w-5xl mx-auto">
           <p className="text-crimson-500 text-[11px] tracking-[0.5em] uppercase mb-3">
             {CHARACTERS_CONTENT.label}
@@ -342,7 +342,7 @@ export default function HomePage() {
       {/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
           Section 6: World / Timeline
       ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */}
-      <section id="world" className="py-20 md:py-28 px-5">
+      <section id="world" className="py-12 md:py-16 px-5">
         <div className="max-w-4xl mx-auto">
           <p className="text-crimson-500 text-[11px] tracking-[0.5em] uppercase mb-3">
             {WORLD_CONTENT.label}
@@ -370,7 +370,7 @@ export default function HomePage() {
       {/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
           Section 7: AI Production
       ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */}
-      <section id="production" className="py-20 md:py-28 px-5">
+      <section id="production" className="py-12 md:py-16 px-5">
         <div className="max-w-5xl mx-auto">
           <p className="text-crimson-500 text-[11px] tracking-[0.5em] uppercase mb-3">
             {PRODUCTION_CONTENT.label}
@@ -382,7 +382,7 @@ export default function HomePage() {
 
           <div className="grid md:grid-cols-2 gap-8 mb-12">
             {PRODUCTION_CONTENT.body.map((para, i) => (
-              <p key={i} className="text-stone-400 text-sm md:text-base text-ja leading-loose">
+              <p key={i} className="text-stone-400 text-sm md:text-base text-ja leading-relaxed">
                 {para}
               </p>
             ))}
@@ -419,7 +419,7 @@ export default function HomePage() {
       {/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
           Section 8: Music
       ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */}
-      <section id="music" className="py-20 md:py-28 px-5">
+      <section id="music" className="py-12 md:py-16 px-5">
         <div className="max-w-5xl mx-auto">
           <p className="text-crimson-500 text-[11px] tracking-[0.5em] uppercase mb-3">
             {MUSIC_CONTENT.label}
@@ -512,7 +512,7 @@ export default function HomePage() {
 
                 <div className="h-px bg-gradient-to-r from-crimson-800/50 to-transparent mb-6" />
 
-                <p className="text-stone-300 text-sm text-ja leading-loose mb-4">
+                <p className="text-stone-300 text-sm text-ja leading-relaxed mb-4">
                   {MUSIC_CONTENT.artist.profile}
                 </p>
                 <p className="text-stone-600 text-xs italic leading-relaxed border-l-2 border-stone-800 pl-4">
@@ -539,7 +539,7 @@ export default function HomePage() {
       {/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
           Section 9: SNS / Contact
       ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */}
-      <section id="contact" className="py-20 md:py-28 px-5">
+      <section id="contact" className="py-12 md:py-16 px-5">
         <div className="max-w-3xl mx-auto text-center">
           <p className="text-crimson-500 text-[11px] tracking-[0.5em] uppercase mb-3">
             {SNS_CONTACT_CONTENT.label}
@@ -596,7 +596,7 @@ export default function HomePage() {
             <div className="absolute top-3 right-3 w-4 h-4 border-t border-r border-crimson-900/40" />
             <div className="absolute bottom-3 left-3 w-4 h-4 border-b border-l border-crimson-900/40" />
 
-            <p className="text-stone-400 text-sm text-ja leading-loose mb-8">
+            <p className="text-stone-400 text-sm text-ja leading-relaxed mb-8">
               {SNS_CONTACT_CONTENT.contact_text}
             </p>
             <a
